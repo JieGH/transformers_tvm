@@ -291,11 +291,11 @@ if model == 2:
 elif model == 5:
     configs = [
         {"name": "l_GPT2_dec_M123",   "M": d, "N": l, "K": d },  
-        # {"name": "l_GPT2_dec_M5",     "M": t,"N": one, "K": dh },
-        # {"name": "l_GPT2_dec_M7",     "M": dh,"N": one, "K": t }, 
-        # {"name": "l_GPT2_dec_M9",     "M": d, "N": one, "K": d },  
-        # {"name": "l_GPT2_dec_F11",    "M": f, "N": one, "K": d },
-        # {"name": "l_GPT2_dec_F13",    "M": d, "N": one, "K": f },
+        {"name": "l_GPT2_dec_M5",     "M": t,"N": one, "K": dh },
+        {"name": "l_GPT2_dec_M7",     "M": dh,"N": one, "K": t }, 
+        {"name": "l_GPT2_dec_M9",     "M": d, "N": one, "K": d },  
+        {"name": "l_GPT2_dec_F11",    "M": f, "N": one, "K": d },
+        {"name": "l_GPT2_dec_F13",    "M": d, "N": one, "K": f },
     ]
 
 Gtarget, dev = set_hardware_target(gpu_or_cpu)
